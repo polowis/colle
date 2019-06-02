@@ -3,7 +3,7 @@ int echoPin = 1;
 long distance;
 long duration;
 
-Motor myMotor
+Motor myMotor;
 
 void setup() {
   // put your setup code here, to run once:
@@ -25,6 +25,7 @@ delay(500);
 
 }
 class Motor{
+  public:
 void spinForward(int duration)
 {
   for (int i =0; i < duration; i++)
