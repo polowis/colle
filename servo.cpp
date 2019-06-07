@@ -12,8 +12,6 @@ pinMode (1, OUTPUT);// set pin 1 (physical pin 6) as output(servo1)
 }
 
 void loop() {
-  // change the number in brackets to change how long the 
-  // hackebot drives forward:
 myMotor.spinForward(40); 
 
 
@@ -45,14 +43,16 @@ void spinBackward(int duration){
   for(int i =360; i < duration; i--){
 digitalWrite (0, HIGH); 
 digitalWrite (1, HIGH);
-delayMicroseconds (1000);//s
+delayMicroseconds (1000);
 digitalWrite (0, LOW);
 delayMicroseconds (1000); 
 digitalWrite (1, LOW);
 delay (18);
   }
 }
+  
 }
+
 void ultra(){
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
